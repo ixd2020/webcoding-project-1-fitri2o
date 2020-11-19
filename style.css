@@ -3,103 +3,134 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
+  background-color:skyblue;
+ 
+}
+
+wrapper{
+	clear: both;
+	margin: 0 auto;
+	width: 70%;
+	background-color: white;
 }
 
 h1 {
   font-style: italic;
   color: #373fff;
+  text-align: center;
+}
+
+
+
   
-}
-table, th, td{
-  border-color: red;
-  
-}
 
-* {
-  box-sizing: border-box;
-}
 
-.box {
-  float: left;
-  
-  padding: 50px;
-  height: 200px;
-}
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
-.redbox {
-  background-color: red;
-  overflow:auto;
-}
-
-.yellbox {
-  background-color: yellow;
-}
-.bluebox {
-  background-color: blue;
-}
-.greenbox {
-  background-color: green;
-}
-.blackbox {
-  background-color: black;
-  color: #ffffff;
-}
-.pinkbox {
+header{
   background-color: pink;
+  text-align: center;
+  margin: 0 30px 50px 0;
   
 }
+header:a{
+  clear: right;
+	text-decoration: none;
+	color: Blue;
+	margin: 0 10px;
+	line-height: 90px;
+   animation-name: example;
+  animation-duration: 4s;
+}
 
-.threecolumn{
-  width: 33.33%;
+
+@keyframes example{
+  from {color:blue;}
+  to {color: yellow;}
+}
+
+.menu{
+  clear: right;
+	text-decoration: none;
+	color: blue;
+	margin: 0 10px;
+	line-height: 70px;
+}
+
+label{
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+
+#toggle{
+	display: none;
+}
+.menu a{
+	clear: right;
+	text-decoration: none;
+	color: gray;
+	margin: 0 10px;
+	line-height: 70px;
+}
+.nav{
+border-bottom: 1px solid;
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+}
+a {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:hover{
+  color:red;
+	text-decoration: underline;
+  background-color:blue;
+  border-radius:5px;
+}
+
+a:visted{
+	color: mediumpurple;
+	text-decoration: underline;
+}
+
+nav a{
+	margin: 20px;
+	padding: 10px 15px;
+	font-variant: small-caps;
+	font-size: 100%;
+	font-family: Arial;
+}
+
+nav a:hover{
+	background-color: red;
+	color: white;
+	text-decoration: none;
+	border-radius: 10px;
+}
+
+
+.image_sample{
+  width: 40%;
+	float: right;
+	
+	padding: center;
+	margin: 10px;
+	
+}
+.image_sample2{
+  width: 40%;
+	float: right;
+	margin: 10px 0px;
+	
+	padding: center;
+	
 }
 .twocolumn{
-  width: 50%;
+  width: 33.3%;
 }
-.onecolumn{
-  width: 100%;
-}
-
-a{
-  border:3px dotted red;
-  padding:10px;
-  text-decoration: none;
-}
-
-a:link {
-  color: pink;
-}
-
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
-
-body {
- background-image: url("https://cdn.glitch.com/bc5033df-bfe4-4267-9aae-da1d08368759%2FIMG_6928.JPG?v=1605150507084");
- background-color: #cccccc;
-  background-size: 100px 100px;
-  background-repeat: repeat;
-  font-family: goldman;
-}
-.attribution{
-  width:33px;
-  height:33px;
-  background-color: white;      
-}
-
