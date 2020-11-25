@@ -22,10 +22,6 @@ h1 {
 
 
 
-  
-
-
-
 
 header{
   background-color: pink;
@@ -39,15 +35,9 @@ header:a{
 	color: Blue;
 	margin: 0 10px;
 	line-height: 90px;
-   animation-name: example;
-  animation-duration: 4s;
+   
 }
 
-
-@keyframes example{
-  from {color:blue;}
-  to {color: yellow;}
-}
 
 .menu{
   clear: right;
@@ -55,6 +45,23 @@ header:a{
 	color: blue;
 	margin: 0 10px;
 	line-height: 70px;
+  
+}
+
+.menu a{
+	clear: right;
+	text-decoration: none;
+	color: blue;
+	margin: 0 40px;
+	line-height: 70px;
+  animation-name: example;
+  animation-duration: 4s;
+  
+}
+
+@keyframes example{
+  from {color:blue;}
+  to {color: yellow;}
 }
 
 label{
@@ -69,13 +76,7 @@ label{
 #toggle{
 	display: none;
 }
-.menu a{
-	clear: right;
-	text-decoration: none;
-	color: gray;
-	margin: 0 10px;
-	line-height: 70px;
-}
+
 .nav{
 border-bottom: 1px solid;
 	text-align: center;
@@ -126,11 +127,16 @@ nav a:hover{
 .image_sample2{
   width: 40%;
 	float: right;
-	margin: 10px 0px;
+	margin-right: 10px;
+  margin-left: 10px;
 	
-	padding: center;
+	padding-left:500px;
 	
 }
 .twocolumn{
   width: 33.3%;
+}
+
+.onecolumn{
+  width: 100%;
 }
