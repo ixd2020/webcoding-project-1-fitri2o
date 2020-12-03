@@ -1,18 +1,17 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>The Webdesign website</title>
-    
+
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    
+    <link rel="stylesheet" href="/style.css" />
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
+  </head>
   <body>
     <h1 class="name">Paul Rand</h1>
     <div id="wrapper">
@@ -30,18 +29,25 @@
         </div>
       </header>
     </div>
-
+    <h2 class="who">
+      Login as a member
+    </h2>
+    <h3>
+      Username
+    </h3>
+    <input type="textbox" placeholder="Enter your username">
+    <h3>
+      Password
+    </h3>
+    <input type="textbox" placeholder="Enter your password">
+    <br>
+    <input type="button" value="Login" onclick="login()">
     
-    <div class="intro">
-    <h2>
-      Who we are?
-      </h2>
-      <p>
-        The Website Design is a website for people to learn new things for web designing. Inspirational designs from Paul Rand himself. This website created in 2020.
-      </p>
-    
-    </div>
-    
+    <script>
+function login() {
+  
+}
+</script>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->

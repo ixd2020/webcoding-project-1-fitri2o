@@ -38,6 +38,27 @@ header:a{
    
 }
 
+.who{
+  font-size:50px;
+  text-align:center;
+  padding:center;
+  color:red;
+}
+
+.story{
+  text-alight:left;
+  padding:bottom;
+   margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 0;
+  margin-right: 0;
+  text-indent: 30px;
+}
+
+.intro{
+  font-size: 100px;
+}
+
 
 .menu{
   clear: right;
@@ -59,9 +80,27 @@ header:a{
   
 }
 
+.go-top {
+    position:fixed;
+    bottom:2em;
+    right:2em;
+    text-decoration:none;
+    color:white;
+    background-color:#616161;
+    opacity:0.8;
+    padding:5px 10px;
+    display:none;
+}
+.go-top:hover {
+    background-color:#3B90CE;
+    opacity:1;
+    color:white;
+}
+
+
 @keyframes example{
   from {color:blue;}
-  to {color: yellow;}
+  to {color: lime;}
 }
 
 label{
@@ -100,7 +139,7 @@ a:visted{
 	text-decoration: underline;
 }
 
-nav a{
+.nav a{
 	margin: 20px;
 	padding: 10px 15px;
 	font-variant: small-caps;
@@ -108,13 +147,29 @@ nav a{
 	font-family: Arial;
 }
 
-nav a:hover{
+.nav a:hover{
 	background-color: red;
 	color: white;
 	text-decoration: none;
 	border-radius: 10px;
 }
 
+.table1{
+  padding: right;
+  margin-right: 100px;
+  margin-left: 100px;
+  border: 3px solid black;
+}
+
+.table1 td{
+  border: 3px solid black;
+}
+
+.para1{
+  width:50%;
+  padding:center;
+  float:center;
+}
 
 .image_sample{
   width: 40%;

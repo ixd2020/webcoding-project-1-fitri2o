@@ -6,9 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>The Webdesign website</title>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- import the webpage's stylesheet -->
+    
+    
     <link rel="stylesheet" href="/style.css" />
+    <script>
+      var backTop = {
+    init: function(){
+        $(doc).ready(function(){
+            
+                // Show or Hide The Sticky Footer Button
+
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 200 ) {
+
+                        $('.go-top').fadeIn(200);
+                    } else {
+                        $('.go-top').fadeOut(200);
+                    }
+                });
+
+
+                // Animate the scroll to top
+
+                $('a.top').click(function(){
+$(document.body).animate({scrollTop : 0},800);
+return false;
+});
+
+        });
+    }
+};
+      
+      
+   
+    </script>
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -25,6 +58,7 @@
 
             <a href="About.html"><b>About</b></a>
             <a href="Sampleimage.html"><b>Sample Creation</b></a>
+            <a href="login.html"><b>Login</b></a>
           </h3>
         </div>
       </header>
@@ -32,16 +66,33 @@
     <h2 class="who">
       Who is Paul Rand?
     </h2>
-    <p class="story">
+    <table>
+      <tr>
+      <td>
+        <p class="story">
       Born Peretz Rosenbaum in 1914 and deceased in 1996, Paul Rand is a graphic
-      design legend. Throughout his 60-years long career, he changed America's
-      opinion on visual communication. With his editorial designs,
-      advertisements, and visual identity works, Rand brought avant-garde
-      European ideas to the United-States, mixing visual arts and commercial
-      design. His colourful combinations, approach of typography and use of
-      media translate his desire to "defamiliarize the ordinary". His style
+      design legend. 
+      <br>
+      Throughout his 60-years long career, he changed America's
+      opinion on visual communication. <br>With his editorial designs,
+      advertisements,<br> and visual identity works, Rand brought avant-garde
+      European ideas to the United-States, <br>mixing visual arts and commercial
+      design. <br>
+      His colourful combinations, approach of typography and use of
+      media translate his desire <br>
+      to "defamiliarize the ordinary".<br>
+      His style
       consequently still have an impact on graphic design today.
     </p>
+        </td>
+        <td>
+          <img src="https://cdn.glitch.com/c95374ef-4b61-4aab-823d-51f0f6223d37%2Fpaul-rand-al-cheruk.jpg?v=1606965185829">
+        </td>
+      </tr>
+    </table>
+    
+    <br>
+    <a class="top" href="#">Back to top</a>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
