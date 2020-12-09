@@ -9,11 +9,29 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
+    <script>
+    function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+    </script>
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
   <body>
+    <div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
     <h1 class="name">Paul Rand</h1>
     <div id="wrapper">
       <header>
@@ -26,10 +44,11 @@
             <a href="About.html"><b>About</b></a>
             <a href="Sampleimage.html"><b>Sample Creation</b></a>
             <a href="login.html"><b>Login</b></a>
+            <a><b><button class="openBtn" onclick="openSearch()">Open Search Box</button></b></a>
           </h3>
         </div>
       </header>
-    </div>
+    
 
     <div class="Maincontent">
       <table class="table1">
@@ -105,5 +124,9 @@
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script>
+    <footer id="MainFooter">
+				<p>Copyright &copy; All Rights Reserved.</p>
+			</footer>
+      </div>
   </body>
 </html>

@@ -39,7 +39,13 @@ return false;
     }
 };
       
-      
+      function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
    
     </script>
 
@@ -47,6 +53,15 @@ return false;
     <script src="/script.js" defer></script>
   </head>
   <body>
+    <div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
     <h1 class="name">Paul Rand</h1>
     <div id="wrapper">
       <header>
@@ -59,16 +74,20 @@ return false;
             <a href="About.html"><b>About</b></a>
             <a href="Sampleimage.html"><b>Sample Creation</b></a>
             <a href="login.html"><b>Login</b></a>
+            <a><b><button class="openBtn" onclick="openSearch()">Open Search Box</button></b></a>
+            
+            
           </h3>
         </div>
       </header>
-    </div>
+    
     <h2 class="who">
       Who is Paul Rand?
     </h2>
     <table>
       <tr>
       <td>
+        <h3>Paul Rand - An art designer</h3>
         <p class="story">
       Born Peretz Rosenbaum in 1914 and deceased in 1996, Paul Rand is a graphic
       design legend. 
@@ -98,5 +117,9 @@ return false;
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script>
+    <footer id="MainFooter">
+				<p>Copyright &copy; All Rights Reserved.</p>
+			</footer>
+      </div>
   </body>
 </html>

@@ -7,10 +7,10 @@ body {
  
 }
 
-wrapper{
+#wrapper{
 	clear: both;
 	margin: 0 auto;
-	width: 70%;
+	width: 90%;
 	background-color: white;
 }
 
@@ -20,29 +20,110 @@ h1 {
   text-align: center;
 }
 
+.openBtn {
+  background: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
 
+.openBtn:hover {
+  background: #bbb;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: White;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  background: #bbb;
+}
 
 
 header{
-  background-color: pink;
+  background-color: Black;
   text-align: center;
+  width:100%;
   margin: 0 30px 50px 0;
   
 }
 header:a{
   clear: right;
 	text-decoration: none;
-	color: Blue;
+	color: White;
 	margin: 0 10px;
 	line-height: 90px;
    
 }
 
 .who{
+  float:center;
   font-size:50px;
   text-align:center;
   padding:center;
   color:red;
+}
+
+.loginpage{
+  width:65%;
+	float: right;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 10px;
 }
 
 .story{
@@ -193,4 +274,22 @@ a:visted{
 
 .onecolumn{
   width: 100%;
+}
+
+
+#MainFooter{
+	clear: both;
+	text-align:center;
+	background-color: black;
+	color: white;
+	height: 50px;
+}
+
+#MainFooter p{
+	padding-top: 17px;
+	font-size: 90%;
+}
+
+#MainFooter p a{
+	color: gray;
 }
