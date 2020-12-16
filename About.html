@@ -10,6 +10,34 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
     <script>
+      
+      var backTop = {
+    init: function(){
+        $(doc).ready(function(){
+            
+                // Show or Hide The Sticky Footer Button
+
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 200 ) {
+
+                        $('.go-top').fadeIn(200);
+                    } else {
+                        $('.go-top').fadeOut(200);
+                    }
+                });
+
+
+                // Animate the scroll to top
+
+                $('a.top').click(function(){
+$(document.body).animate({scrollTop : 0},800);
+return false;
+});
+
+        });
+    }
+};
+      
       function openSearch() {
         document.getElementById("myOverlay").style.display = "block";
       }
@@ -45,7 +73,7 @@
 
             <a href="About.html"><b>About</b></a>
             <a href="Sampleimage.html"><b>Sample Creation</b></a>
-            <a href="login.html"><b>Login</b></a>
+            <a href="populararts.html"><b>Popular Arts</b></a>
             <a
               ><b
                 ><button class="openBtn" onclick="openSearch()">
@@ -66,15 +94,24 @@
           designing. Inspirational designs from Paul Rand himself. This website
           created in 2020.
         </p>
+        <p>
+            See the video down below to learn more about the designer himself.
+        </p>
+      </div>
+      <div>
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/L4kSCd8yt00">
+</iframe>
       </div>
 
       <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
-      <div
-        class="glitchButton"
-        style="position:fixed;top:20px;right:20px;"
-      ></div>
-      <script src="https://button.glitch.me/button.js" defer></script>
+      <br>
+    <a class="top" href="#">Back to top</a>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
       <footer id="MainFooter">
         <p>Copyright &copy; All Rights Reserved.</p>
       </footer>
