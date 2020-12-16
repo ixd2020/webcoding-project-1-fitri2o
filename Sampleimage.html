@@ -10,13 +10,13 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
     <script>
-    function openSearch() {
-  document.getElementById("myOverlay").style.display = "block";
-}
+      function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+      }
 
-function closeSearch() {
-  document.getElementById("myOverlay").style.display = "none";
-}
+      function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+      }
     </script>
 
     <!-- import the webpage's javascript file -->
@@ -24,14 +24,16 @@ function closeSearch() {
   </head>
   <body>
     <div id="myOverlay" class="overlay">
-  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-  <div class="overlay-content">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-</div>
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >×</span
+      >
+      <div class="overlay-content">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
     <h1 class="name">Paul Rand</h1>
     <div id="wrapper">
       <header>
@@ -44,89 +46,103 @@ function closeSearch() {
             <a href="About.html"><b>About</b></a>
             <a href="Sampleimage.html"><b>Sample Creation</b></a>
             <a href="login.html"><b>Login</b></a>
-            <a><b><button class="openBtn" onclick="openSearch()">Open Search Box</button></b></a>
+            <a
+              ><b
+                ><button class="openBtn" onclick="openSearch()">
+                  Open Search Box
+                </button></b
+              ></a
+            >
           </h3>
         </div>
       </header>
-    
 
-    <div class="Maincontent">
-      <table class="table1">
-        <tr>
-          <td>
-            <div class="para1">
-              <img
-                src="https://cdn.glitch.com/c95374ef-4b61-4aab-823d-51f0f6223d37%2Fpaul%20rand%20design%201.jpg?v=1605754411241"
-              />
-            </div>
-          </td>
-          <td>
-            <div class="">
+      <div class="Maincontent">
+        <table class="table1">
+          <tr>
+            <td>
+              <div class="para1">
+                <img
+                  src="https://cdn.glitch.com/c95374ef-4b61-4aab-823d-51f0f6223d37%2Fpaul%20rand%20design%201.jpg?v=1605754411241"
+                />
+              </div>
+            </td>
+            <td>
+              <div class="">
+                <p class="para1">
+                  <strong>Dubonnet - Your Jar In A Bottle</strong>
+                  <br />
+                  This design create by the man himself to promote a pruduct of
+                  wine.
+                  <br />
+                  The word DUBONNET is rendered half in bold, the rest in
+                  outline, focusing the viewer's eye on DUBO.
+                  <br />
+                  In the second panel, the character is drinking as his outlined
+                  body begins to fill with color and detail,
+                  <br />
+                  and another letter, the N, is now bold, revealing DUBON
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="">
+                <p class="para1">
+                  <strong>ABC logo(American Brodcasting Company)</strong>
+                  <br />
+                  It derives its meaning and usefulness from the quality of that
+                  which it symbolizes.
+                  <br />
+                  If a company is second rate, the logo will eventually be
+                  perceived as second rate.
+                </p>
+              </div>
+            </td>
+            <td>
+              <div class="">
+                <img
+                  src="https://cdn.glitch.com/c95374ef-4b61-4aab-823d-51f0f6223d37%2Fabc%20logo.jpg?v=1606964431526"
+                />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="">
+                <img
+                  src="https://cdn.glitch.com/c95374ef-4b61-4aab-823d-51f0f6223d37%2Fpaul%20rand%20design%202.jpg?v=1605754411666"
+                />
+              </div>
+            </td>
+            <td>
               <p class="para1">
-                <strong>Dubonnet - Your Jar In A Bottle</strong>
+                <strong>John David Stories</strong>
                 <br />
-                This design create by the man himself to promote a pruduct of
-                wine.
-                <br />
-                The word DUBONNET is rendered half in bold, the rest in outline,
-                focusing the viewer's eye on DUBO.
-                <br />
-                In the second panel, the character is drinking as his outlined
-                body begins to fill with color and detail,
-                <br />
-                and another letter, the N, is now bold, revealing DUBON
-              </p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="">
-              <p class="para1">
-                <strong>ABC logo(American Brodcasting Company)</strong>
-                <br />
-                It derives its meaning and usefulness from the quality of that
-                which it symbolizes. 
+                The collection is separated by donor in order to preserve
                 <br>
-                If a company is second rate, the logo will
-                eventually be perceived as second rate.
+                the source of the works, and then organized in two series: 
+                <br>I. Client
+                Correspondence, Project and Document Files;
+                <br> and II.
+                Bibliographic Files.
               </p>
-            </div>
-          </td>
-          <td>
-            <div class="">
-              <img
-                src="https://cdn.glitch.com/c95374ef-4b61-4aab-823d-51f0f6223d37%2Fabc%20logo.jpg?v=1606964431526"
-              />
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="">
-              <img
-                src="https://cdn.glitch.com/c95374ef-4b61-4aab-823d-51f0f6223d37%2Fpaul%20rand%20design%202.jpg?v=1605754411666"
-              />
-            </div>
-          </td>
-          <td>
-            <p class="para1">
-              
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      
-    </div>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
-    <footer id="MainFooter">
-				<p>Copyright &copy; All Rights Reserved.</p>
-			</footer>
+            </td>
+          </tr>
+        </table>
       </div>
+
+      <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+      <div
+        class="glitchButton"
+        style="position:fixed;top:20px;right:20px;"
+      ></div>
+      <script src="https://button.glitch.me/button.js" defer></script>
+      <footer id="MainFooter">
+        <p>Copyright &copy; All Rights Reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>

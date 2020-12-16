@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>The Webdesign website</title>
-    
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-    <script>
-    
-    function openSearch() {
-  document.getElementById("myOverlay").style.display = "block";
-}
 
-function closeSearch() {
-  document.getElementById("myOverlay").style.display = "none";
-}
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <script>
+      function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+      }
     </script>
-    
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
+  </head>
   <body>
     <div id="myOverlay" class="overlay">
-  <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-  <div class="overlay-content">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-</div>
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >×</span
+      >
+      <div class="overlay-content">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
     <h1 class="name">Paul Rand</h1>
     <div id="wrapper">
       <header>
@@ -45,31 +46,38 @@ function closeSearch() {
             <a href="About.html"><b>About</b></a>
             <a href="Sampleimage.html"><b>Sample Creation</b></a>
             <a href="login.html"><b>Login</b></a>
-           <a><b><button class="openBtn" onclick="openSearch()">Open Search Box</button></b></a>
+            <a
+              ><b
+                ><button class="openBtn" onclick="openSearch()">
+                  Open Search Box
+                </button></b
+              ></a
+            >
           </h3>
         </div>
       </header>
-    
 
-    
-    <div class="intro">
-    <h2>
-      Who we are?
-      </h2>
-      <p>
-        The Website Design is a website for people to learn new things for web designing. Inspirational designs from Paul Rand himself. This website created in 2020.
-      </p>
-    
-    </div>
-    
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
-    <footer id="MainFooter">
-				<p>Copyright &copy; All Rights Reserved.</p>
-			</footer>
+      <div class="intro">
+        <h2>
+          Who we are?
+        </h2>
+        <p>
+          The Website Design is a website for people to learn new things for web
+          designing. Inspirational designs from Paul Rand himself. This website
+          created in 2020.
+        </p>
       </div>
+
+      <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+      <div
+        class="glitchButton"
+        style="position:fixed;top:20px;right:20px;"
+      ></div>
+      <script src="https://button.glitch.me/button.js" defer></script>
+      <footer id="MainFooter">
+        <p>Copyright &copy; All Rights Reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
