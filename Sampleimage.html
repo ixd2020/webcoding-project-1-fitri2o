@@ -10,34 +10,29 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
     <script>
-      
       var backTop = {
-    init: function(){
-        $(doc).ready(function(){
-            
-                // Show or Hide The Sticky Footer Button
+        init: function() {
+          $(doc).ready(function() {
+            // Show or Hide The Sticky Footer Button
 
-                $(window).scroll(function(){
-                    if ($(this).scrollTop() > 200 ) {
+            $(window).scroll(function() {
+              if ($(this).scrollTop() > 200) {
+                $(".go-top").fadeIn(200);
+              } else {
+                $(".go-top").fadeOut(200);
+              }
+            });
 
-                        $('.go-top').fadeIn(200);
-                    } else {
-                        $('.go-top').fadeOut(200);
-                    }
-                });
+            // Animate the scroll to top
 
+            $("a.top").click(function() {
+              $(document.body).animate({ scrollTop: 0 }, 800);
+              return false;
+            });
+          });
+        }
+      };
 
-                // Animate the scroll to top
-
-                $('a.top').click(function(){
-$(document.body).animate({scrollTop : 0},800);
-return false;
-});
-
-        });
-    }
-};
-      
       function openSearch() {
         document.getElementById("myOverlay").style.display = "block";
       }
@@ -46,6 +41,7 @@ return false;
         document.getElementById("myOverlay").style.display = "none";
       }
     </script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
@@ -58,7 +54,7 @@ return false;
       <div class="overlay-content">
         <form action="/action_page.php">
           <input type="text" placeholder="Search.." name="search" />
-          <button type="submit"><i class="fa fa-search"></i></button>
+          <button type="submit"><i class="iconify" data-icon="et-magnifying-glass" data-inline="false">Search</i></button>
         </form>
       </div>
     </div>
@@ -84,24 +80,26 @@ return false;
           </h3>
         </div>
       </header>
-      
 
       <div class="Maincontent">
         <div class="intro">
-        <h3>
-          Paul Rand's Popular Collection
-        </h3>
-        <p>
-          The Website Design is a website for people to learn new things for web
-          designing. Inspirational designs from Paul Rand himself. This website
-          created in 2020.
-        </p>
-      </div>
+          <h3>
+            Some Paul Rand's Sample Collection
+          </h3>
+          <p>
+            This page shows some of Paul Rand's sample collection design. The
+            exhibition dedicated to his work, and rediscover the work of the
+            designer who will change the face of the United States, and whose
+            influence is still felt today.
+            <br />
+            Scroll down to see :)
+          </p>
+        </div>
 
-      <!-- include the Glitch button to show what the webpage is about and
+        <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
-      <br>
-        
+        <br />
+
         <table class="table1">
           <tr>
             <td>
@@ -165,12 +163,11 @@ return false;
                 <strong>John David Stories</strong>
                 <br />
                 The collection is separated by donor in order to preserve
-                <br>
-                the source of the works, and then organized in two series: 
-                <br>I. Client
-                Correspondence, Project and Document Files;
-                <br> and II.
-                Bibliographic Files.
+                <br />
+                the source of the works, and then organized in two series:
+                <br />I. Client Correspondence, Project and Document Files;
+                <br />
+                and II. Bibliographic Files.
               </p>
             </td>
           </tr>
@@ -179,13 +176,16 @@ return false;
 
       <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
-      <br>
-    <a class="top" href="#">Back to top</a>
+      <br />
+      <a class="top" href="#">Back to top</a>
 
-    <!-- include the Glitch button to show what the webpage is about and
+      <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js" defer></script>
+      <div
+        class="glitchButton"
+        style="position:fixed;top:20px;right:20px;"
+      ></div>
+      <script src="https://button.glitch.me/button.js" defer></script>
       <footer id="MainFooter">
         <p>Copyright &copy; All Rights Reserved.</p>
       </footer>
