@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>The Webdesign website</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- import the webpage's stylesheet -->
+
     <link rel="stylesheet" href="/style.css" />
     <script>
       var backTop = {
@@ -54,7 +55,14 @@
       <div class="overlay-content">
         <form action="/action_page.php">
           <input type="text" placeholder="Search.." name="search" />
-          <button type="submit"><i class="iconify" data-icon="et-magnifying-glass" data-inline="false">Search</i></button>
+          <button type="submit">
+            <i
+              class="iconify"
+              data-icon="et-magnifying-glass"
+              data-inline="false"
+              >Search</i
+            >
+          </button>
         </form>
       </div>
     </div>
@@ -82,44 +90,51 @@
         </div>
       </header>
 
-      <div class="intro">
-        <h2>
-          Who we are?
-        </h2>
-        <p>
-          The Website Design is a website for people to learn new things for web
-          designing. Inspirational designs from Paul Rand himself. This website
-          created in 2020.
-        </p>
-        <br />
-        <p>
-          <h3>
-            History
-        </h3>
-          After the war, from 1955 onwards, he distinguished himself with
-          progressive graphic identities that served companies' interests. As an
-          artistic director, he helped to transform the advertising industry by
-          emphasizing the importance of graphic design and visuals over writing.
-          He produced logos for large companies such as IBM, ABC, UPS, or Steve
-          Jobs' NeXT, still legendary and almost unchanged to this day (except
-          UPS).
-        </p>
-        <br />
-        <p>
-          See the video down below to learn more about the designer himself.
-        </p>
-      </div>
-      <div>
-        <iframe style="display:block; margin:auto;"
-          width="420"
-          height="345"
-          src="https://www.youtube.com/embed/L4kSCd8yt00"
-        >
-        </iframe>
-      </div>
+      <h2 class="who">
+        Contact Us
+      </h2>
+      <table style="display:block; margin:auto;">
+        <tr>
+          <td>
+            <p>
+              <strong>
+                Enter your email/phone number here to receive news and
+                information</strong
+              >
+            </p>
+          </td>
+          <td rowspan="4">
+            <p>
+              Call us at 987654321.
+              <br>
+              Email us at paulrandtribute@gmail.com
+              <br>
+              Fax us at +65 323 555 1234
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="textbox" placeholder="Enter your Email" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="textbox" placeholder="Enter your number" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="Submit" onclick="myFunction()" />
+          </td>
+        </tr>
+      </table>
+      <script>
+function myFunction() {
+  alert("Thank you for Subscribe with us! :)");
+}
+</script>
 
-      <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
       <br />
       <a class="top" href="#">Back to top</a>
 

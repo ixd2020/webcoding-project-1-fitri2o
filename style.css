@@ -166,6 +166,7 @@ header:a{
 	margin: 0 40px;
 	line-height: 70px;
   animation-name: example;
+  animation: example 1s infinite;
   animation-duration: 4s;
   
 }
@@ -187,10 +188,19 @@ header:a{
     color:white;
 }
 
+.name{
+  
+}
+
+.name:hover{
+	color: blue;
+  text-shadow:0 0 20px #0000A0, 0 0 50px #0000A0, 0 0 90px #0000A0;
+}
 
 @keyframes example{
-  from {color:blue;}
-  to {color: lime;}
+   0% { color: red; }
+  50% { color: blue; }
+  100% { color: red; }
 }
 
 label{
@@ -307,4 +317,29 @@ a:visted{
 .para1{
   text-align:center;
   margin-left:100px;
+}
+
+@media screen and (max-width: 1300px){
+  header{
+    float:none;
+    width:100%;
+    
+  }
+  .nav a{
+    float:none;
+    width:100%;
+  }
+  .menu a{
+    float:none;
+    width:100%;
+  }
+  
+  img{
+    float:none;
+    width:100%;
+  }
+  table{
+    float:none;
+      width:80%;
+  }
 }
